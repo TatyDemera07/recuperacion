@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario </title>
+    <link rel="stylesheet" href="/EXAMEN RECUPERACION//css/formulario.css">
+    <!--Icon-Font-->
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        function modal()
+        {
+    
+            var respuesta=confirm("Estas seguro de enviar los datos");
+    
+            if (respuesta==true)
+        {
+            return true;
+    
+        }
+        else
+        {
+            return false;
+        }
+    }
+    </script>
+    <div class="contenedor">
+    <form action="formulario" method="get">
+        <h1>FORMULARIO</h1>
+        <p>Nombre: <input type="text" name="nombre" size="40"></p>
+        <p>Pedido: <input type="number" name="lista" min="1900"></p>
+        <p>Correo Electronico: <input typer="text" email="correo" size="40"></p>
+        <p>Tipo de entrega:
+            <br>
+          <input type="radio" name="hm" value="h"> Domicilio
+          <input type="radio" name="hm" value="m"> Local
+        </p>
+        <p>
+          <input type="submit" value="Enviar" onclick="return modal()">
+          <input type="reset" value="Borrar" onclick="return modal()">
+        </p>
+      </form>
+      </div>
+</body>
+</html>
